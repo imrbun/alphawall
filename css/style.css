@@ -231,6 +231,15 @@
     }
 }
 
+.icon-circle {
+    background-color: rgba(220, 236, 255, 1);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .section-four .hero-btn {
     display: block;
     margin: 0 auto;
