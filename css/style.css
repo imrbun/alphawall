@@ -302,6 +302,7 @@ html, body {
     height: auto;
 }
 
+
 .section-four .section-inner {
     max-width: 1440px;
     margin: 0 auto;
@@ -373,7 +374,7 @@ html, body {
 }
 
 .partners-track img {
-    max-height: 40px;
+    max-height: 25px;
     object-fit: contain;
     display: block;
 }
@@ -493,6 +494,12 @@ html, body {
 .nav-link:hover::before,
 .nav-link:hover::after {
     transform: scaleX(1);
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    /* Adjust the spacing here */
 }
 
 .navbar-brand {
