@@ -29,11 +29,20 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="spinner-wrapper">
+                <div class="spinner-circle"></div>
+                <div class="lock-icon"><img src="images/lock.webp" alt="Lock" /></div>
+            </div>
+        </div>
+    </div>
     <!-- ================= HEADER ================= -->
     <header class="sticky-top bg-white shadow-sm">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -41,11 +50,13 @@
 
                 <!-- Logo Left -->
                 <a class="navbar-brand" href="#">
+
                     <img src="images/logo.png" alt="Logo" style="height:50px;">
                 </a>
 
                 <!-- Mobile Toggle -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -53,7 +64,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="mainNav">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="home.html">Home</a>
+                            <a class="nav-link active" href="index.html"><span>Home</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Products</a>
@@ -79,18 +90,20 @@
 
     <!-- ================= CONTENT ================= -->
 
+
     <section class="hero-banner d-flex align-items-center">
         <div class="container">
             <div class="row">
-
-
                 <!-- Text on the right -->
                 <div class="col-md-6 text-white">
-                    <h1 class="fw-bold">Next-Generation Cybersecurity for a Safer Digital Future</h1>
-                    <p class="lead">From real-time network threat monitoring to deep software analysis and intelligent
+                    <h1 class="fw-bold" id="typing-text">Next-Generation Cybersecurity for a Safer Digital Future
+                    </h1>
+                    <p data-aos="fade-up" class="lead">From real-time network threat monitoring to deep software
+                        analysis and intelligent
                         fuzzing - we provide enterprise-grade security products and services designed for modern,
                         high-risk environments.</p>
-                    <a href="#" class="btn hero-btn btn-lg">Get a Demo</a>
+                    <div data-aos="fade-up"><a href="#" class="btn hero-btn btn-lg">Get a Demo</a></div>
+
                 </div>
             </div>
         </div>
@@ -102,21 +115,25 @@
 
                 <!-- LEFT CONTENT -->
                 <div class="col-md-6 mb-4 mb-md-0">
-                    <h2 class="fw-bold mb-3">AlphaSentinels: Network Threat Monitoring Appliance</h2>
+                    <h2 data-aos="fade-right" class="fw-bold section-title mb-3">AlphaSentinels: Network Threat
+                        Monitoring
+                        Appliance</h2>
 
-                    <ul class="section-list">
+                    <ul data-aos="fade-right" class="section-list">
                         <li>Real-time network sniffing & threat scoring</li>
                         <li>Cloud AI analysis</li>
                         <li>Push alerts to IT ops</li>
                         <li>Full network-wide visualization</li>
                     </ul>
 
-                    <a href="#" class="btn section-btn mt-3">Learn More ></a>
+                    <div data-aos="fade-up"> <a href="#" class="btn section-btn mt-3">Learn More ></a></div>
+
                 </div>
 
                 <!-- RIGHT IMAGE -->
                 <div class="col-md-6 text-center">
-                    <img src="images/Asset 11@2x-8.png" class="img-fluid section-image" alt="Section Image">
+                    <img src="images/Asset 11@2x-8.png" data-aos="fade-left" class="img-fluid section-image"
+                        alt="Section Image">
                 </div>
 
             </div>
@@ -125,12 +142,15 @@
 
     <!-- ================= THIRD SECTION ================= -->
     <section class="section-three py-5">
+        <div class="particles-wrapper">
+            <div id="particles-js-2"></div>
+        </div>
         <div class="section-inner container">
             <div class="row g-4">
 
                 <!-- CARD 1 -->
                 <div class="col-md-6">
-                    <div class="info-card">
+                    <div data-aos="fade-right" class="info-card">
                         <div class="row align-items-center">
                             <div class="col-7">
                                 <h2 class="fw-bold">SaaS Service</h2>
@@ -147,7 +167,7 @@
 
                 <!-- CARD 2 -->
                 <div class="col-md-6">
-                    <div class="info-card">
+                    <div data-aos="fade-left" class="info-card">
                         <div class="row align-items-center">
                             <div class="col-7">
                                 <h2 class="fw-bold">Rapid Inspection</h2>
@@ -166,7 +186,7 @@
 
                 <!-- CARD 3 -->
                 <div class="col-md-6">
-                    <div class="info-card">
+                    <div data-aos="fade-right" class="info-card">
                         <div class="row align-items-center">
                             <div class="col-7">
                                 <h2 class="fw-bold">Private Monitoring</h2>
@@ -182,7 +202,7 @@
 
                 <!-- CARD 4 -->
                 <div class="col-md-6">
-                    <div class="info-card">
+                    <div data-aos="fade-left" class="info-card">
                         <div class="row align-items-center">
                             <div class="col-7">
                                 <h2 class="fw-bold">Cyber Defense Operations</h2>
@@ -204,28 +224,30 @@
     <section class="section-four py-5 bg-white">
         <div class="section-inner container">
             <!-- Section Title -->
-            <h2 class="text-center fw-bold mb-5">Solutions</h2>
-            <div class="row g-5">
-                <div class="col-md-6 text-center">
+            <h2 data-aos="fade-right" class="text-center section-title fw-bold mb-5">Solutions</h2>
+
+            <div class="row g-4">
+                <div data-aos="fade-up" data-aos-delay="0" class="col-md-6 text-center">
                     <h4 class="fw-bold mb-2">Software Composition Analysis</h4>
                     <img src="images/Asset 9@2x-8.png" class="img-fluid section-four-img mb-3"
                         alt="Software Composition Analysis">
                     <button class="hero-btn">Learn more ></button>
+
                 </div>
 
-                <div class="col-md-6 text-center">
+                <div data-aos="fade-up" data-aos-delay="150" class="col-md-6 text-center">
                     <h4 class="fw-bold mb-2">Penetration Test</h4>
                     <img src="images/Asset 10@2x-8.png" class="img-fluid section-four-img mb-3" alt="Penetration Test">
                     <button class="hero-btn">Learn more ></button>
                 </div>
 
-                <div class="col-md-6 text-center">
+                <div data-aos="fade-up" data-aos-delay="300" class="col-md-6 text-center">
                     <h4 class="fw-bold mb-2">CDN Service</h4>
                     <img src="images/Asset 74@2x-8.png" class="img-fluid section-four-img mb-3" alt="CDN Service">
                     <button class="hero-btn">Learn more ></button>
                 </div>
 
-                <div class="col-md-6 text-center">
+                <div data-aos="fade-up" data-aos-delay="450" class="col-md-6 text-center">
                     <h4 class="fw-bold mb-2">Cloud Service</h4>
                     <img src="images/Asset 73@2x-8.png" class="img-fluid section-four-img mb-3" alt="Cloud Service">
                     <button class="hero-btn">Learn more ></button>
@@ -236,15 +258,19 @@
         </div>
     </section>
 
-    <section class="section-why py-5" style="background: rgba(242, 243, 251, 1);">
+    <section class="section-why py-5">
+        <div class="particles-wrapper">
+            <div id="particles-js"></div>
+        </div>
         <div class="section-inner container text-center">
-            <h2 class="fw-bold mb-5">Why Choose Us</h2>
+            <h2 data-aos="fade-right" class="fw-bold section-title mb-5">Why Choose Us</h2>
 
-            <div class="row justify-content-center align-items-center g-4">
+            <div class="row justify-content-center align-items-center g-4 d-none d-md-flex">
 
                 <!-- Left 3 cards -->
                 <div class="col-md-5 d-flex flex-column align-items-end">
-                    <div class="card p-2 mb-3 shadow-sm" style="width: 100%; border-radius: 15px; border: none;">
+                    <div data-aos="fade-right" class="card p-2 mb-3 shadow-sm"
+                        style="width: 100%; border-radius: 15px; border: none;">
                         <div class="row g-0 align-items-center">
                             <div class="col">
                                 <div class="card-body text-end">
@@ -260,7 +286,8 @@
                         </div>
                     </div>
 
-                    <div class="card p-2 mb-3 shadow-sm" style="width: 100%; border-radius: 15px; border: none;">
+                    <div data-aos="fade-right" class="card p-2 mb-3 shadow-sm"
+                        style="width: 100%; border-radius: 15px; border: none;">
                         <div class="row g-0 align-items-center">
                             <div class="col">
                                 <div class="card-body text-end">
@@ -276,7 +303,8 @@
                         </div>
                     </div>
 
-                    <div class="card p-2 shadow-sm" style="width: 100%; border-radius: 15px; border: none;">
+                    <div data-aos="fade-right" class="card p-2 shadow-sm"
+                        style="width: 100%; border-radius: 15px; border: none;">
                         <div class="row g-0 align-items-center">
                             <div class="col">
                                 <div class="card-body text-end">
@@ -294,12 +322,12 @@
                 </div>
 
                 <!-- Center logo -->
-                <div class="col-md-2 d-flex justify-content-center">
+                <div data-aos="fade-up" class="col-md-2 d-flex justify-content-center d-none d-md-flex">
                     <img src="images/logo.png" class="img-fluid" alt="AlphaWall">
                 </div>
 
                 <!-- Right 3 cards -->
-                <div class="col-md-5 d-flex flex-column align-items-start">
+                <div data-aos="fade-left" class="col-md-5 d-flex flex-column align-items-start">
                     <div class="card p-2 mb-3 shadow-sm" style="width: 100%; border-radius: 15px; border: none;">
                         <div class="row g-0 align-items-center">
                             <div class="col-auto">
@@ -316,7 +344,8 @@
                         </div>
                     </div>
 
-                    <div class="card p-2 mb-3 shadow-sm" style="width: 100%; border-radius: 15px; border: none;">
+                    <div data-aos="fade-left" class="card p-2 mb-3 shadow-sm"
+                        style="width: 100%; border-radius: 15px; border: none;">
                         <div class="row g-0 align-items-center">
                             <div class="col-auto">
                                 <div class="icon-circle me-3">
@@ -332,7 +361,8 @@
                         </div>
                     </div>
 
-                    <div class="card p-2 shadow-sm" style="width: 100%; border-radius: 15px; border: none;">
+                    <div data-aos="fade-left" class="card p-2 shadow-sm"
+                        style="width: 100%; border-radius: 15px; border: none;">
                         <div class="row g-0 align-items-center">
                             <div class="col-auto">
                                 <div class="icon-circle me-3">
@@ -351,13 +381,89 @@
 
             </div>
 
+            <!-- Mobile version -->
+            <div class="d-flex flex-column d-md-none">
+
+                <!-- Cards: icon left, text right -->
+                <div data-aos="fade-left" class="card p-2 mb-3 shadow-sm" style="border-radius:15px; border:none;">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3">
+                            <img src="images/choose/shield.png" style="width:50px;height:50px;" alt="">
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-0">Advanced AI Threat Detection</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" class="card p-2 mb-3 shadow-sm" style="border-radius:15px; border:none;">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3">
+                            <img src="images/choose/worldwide.png" style="width:50px;height:50px;" alt="">
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-0">Global Security Partnerships</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" class="card p-2 mb-3 shadow-sm" style="border-radius:15px; border:none;">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3">
+                            <img src="images/choose/hardware.png" style="width:50px;height:50px;" alt="">
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-0">Enterprise-Grade Hardware + SaaS</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" class="card p-2 mb-3 shadow-sm" style="border-radius:15px; border:none;">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3">
+                            <img src="images/choose/technical-support.png" style="width:50px;height:50px;" alt="">
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-0">Deep Software & Network Expertise
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" class="card p-2 mb-3 shadow-sm" style="border-radius:15px; border:none;">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3">
+                            <img src="images/choose/government.png" style="width:50px;height:50px;" alt="">
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-0">Proven with Government & Fortune 500
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" class="card p-2 mb-3 shadow-sm" style="border-radius:15px; border:none;">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3">
+                            <img src="images/choose/customer-service.png" style="width:50px;height:50px;" alt="">
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-0">24/7 Support and SLA
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
     </section>
 
 
     <section class="section-partners py-5 bg-white text-center">
 
-        <h2 class="fw-bold mb-5">Partner & Clients</h2>
+        <h2 data-aos="fade-right" class="fw-bold section-title mb-5">Partner & Clients</h2>
 
         <div class="partners-slider">
             <div class="partners-track">
@@ -443,7 +549,113 @@
 
     <!-- ================= SCRIPTS ================= -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            preloader.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+        AOS.init();
+
+        const el = document.getElementById("typing-text");
+        const text = el.innerHTML; // use the existing content
+        el.innerHTML = "";          // clear it first
+
+        let i = 0;
+        const speed = 50; // typing speed in ms
+
+        function typeWriter() {
+            if (i < text.length) {
+                el.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        typeWriter();
+
+        particlesJS("particles-js", {
+            particles: {
+                color: { value: "#b5c8f5" },
+                line_linked: {
+                    color: "#b5c8f5",
+                    distance: 200,
+                    enable: true,
+                    opacity: 0.6,
+                    width: 2
+                },
+                move: {
+                    enable: true,
+                    speed: 3,
+                    outModes: { default: "bounce" },
+                },
+                number: { density: { enable: true, area: 300 }, value: 50 },
+                opacity: { value: 0.5, random: false, anim: { enable: false } },
+                shape: { type: "circle" },
+                size: { value: 5, random: false },
+            },
+            interactivity: {
+                detectsOn: "window",
+                events: {
+                    onClick: { enable: false, mode: "push" },
+                    onHover: {
+                        enable: true,
+                        mode: "repulse",
+                        parallax: { enable: false, force: 2, smooth: 10 },
+                    },
+                    resize: true,
+                },
+                modes: {
+                    repulse: { distance: 100, duration: 0.4 },
+                },
+            },
+            retina_detect: true,
+        });
+
+        particlesJS("particles-js-2", {
+            particles: {
+                color: { value: "#b5c8f5" },
+                line_linked: {
+                    color: "#b5c8f5",
+                    distance: 200,
+                    enable: true,
+                    opacity: 0.6,
+                    width: 2
+                },
+                move: {
+                    enable: true,
+                    speed: 3,
+                    outModes: { default: "bounce" },
+                },
+                number: { density: { enable: true, area: 300 }, value: 70 },
+                opacity: { value: 0.5, random: false, anim: { enable: false } },
+                shape: { type: "circle" },
+                size: { value: 5, random: false },
+            },
+            interactivity: {
+                detectsOn: "window",
+                events: {
+                    onClick: { enable: false, mode: "push" },
+                    onHover: {
+                        enable: true,
+                        mode: "repulse",
+                        parallax: { enable: false, force: 2, smooth: 10 },
+                    },
+                    resize: true,
+                },
+                modes: {
+                    repulse: { distance: 100, duration: 0.4 },
+                },
+            },
+            retina_detect: true,
+        });
+    </script>
 </body>
 
 </html>
