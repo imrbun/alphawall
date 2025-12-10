@@ -544,6 +544,11 @@ html, body {
     transform-origin: left;
 }
 
+
+.dropdown-toggle::after {
+    display: none;
+}
+
 /* top */
 .navbar-brand::after {
     bottom: 0;
@@ -571,4 +576,237 @@ html, body {
 .navbar-brand:hover span::before,
 .navbar-brand:hover span::after {
     transform: scale(1);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* ensures proper alignment */
+}
+
+/* Make sure the link doesn't jump */
+.nav-item.dropdown .dropdown-toggle::after {
+    margin-left: .4rem;
+}
+
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero-banner-products {
+    height: auto;
+    position: relative;
+    color: #fff;
+
+    /* Initial placeholder background to avoid grey flash */
+    background-color: #d0d0d0;
+    /* light grey or a color that matches the image */
+    background-image: url("../images/products-background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    background-attachment: fixed;
+    /* Fade in effect */
+    opacity: 0;
+    animation: fadeInBg 1s ease forwards;
+}
+
+/* Keyframes for fade-in background */
+@keyframes fadeInBg {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Mobile: shift background to the right */
+@media (max-width: 768px) {
+    .hero-banner-products {
+        background-position: 60% center;
+        background-attachment: scroll;
+
+    }
+}
+
+/* Optional: fade overlay for better text visibility */
+.hero-banner-products::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* make text easier to read */
+}
+
+.hero-banner-products .container {
+    position: relative;
+    z-index: 2;
+    /* so text stays above overlay */
+}
+
+.feature-box {
+    max-width: 320px;
+    text-align: left;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* top-left */
+.feature-top-left-title {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 5px;
+}
+
+.feature-top-left-title::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    transform: rotate(220deg);
+    transform-origin: right bottom;
+}
+
+/* bottom-left */
+.feature-bottom-left-title {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 5px;
+}
+
+.feature-bottom-left-title::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    transform: rotate(135deg);
+    transform-origin: right bottom;
+}
+
+/* top-right */
+.feature-top-right-title {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 5px;
+}
+
+.feature-top-right-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    transform: rotate(-235deg);
+    transform-origin: left bottom;
+}
+
+/* bottom-right */
+.feature-bottom-right-title {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 5px;
+}
+
+.feature-bottom-right-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.15);
+    transform: rotate(-135deg);
+    transform-origin: left bottom;
+}
+
+.products-image {
+    height: auto;
+    width: 35%;
+}
+
+/* Mobile: shift background to the right */
+@media (max-width: 768px) {
+    .products-image {
+        height: auto;
+        width: 50% !important;
+    }
+}
+
+.card-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(181, 200, 245, 1) 100%);
+}
+
+.dropdown-menu {
+    border: 0px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+}
+
+.dropdown-item {
+    position: relative;
+    display: inline-block;
+    /* ensures underline matches text width */
+}
+
+.dropdown-item:focus,
+.dropdown-item.active {
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.dropdown-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ff0000, #2e3f55);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+}
+
+.dropdown-item:hover::after,
+.dropdown-item.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.partner-img {
+    max-height: 100px;
+    /* same for all images */
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.cdn-img {
+    height: 175px;
+    width: auto;
 }

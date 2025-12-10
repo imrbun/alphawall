@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alphawall - Penetration Test</title>
+    <meta name="description" content="Autonomous fuzzing built for modern, complex and high-risk systems." />
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Alphawall - Penetration Test" />
+    <meta property="og:description" content="Autonomous fuzzing built for modern, complex and high-risk systems." />
+    <meta property="og:image" content="images/favicon.png" />
+    <meta property="og:url" content="images/favicon.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Alphawall - Penetration Test" />
+    <meta name="twitter:description" content="Autonomous fuzzing built for modern, complex and high-risk systems." />
+    <meta name="twitter:image" content="images/favicon.png" />
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="spinner-wrapper">
+                <div class="spinner-circle"></div>
+                <div class="lock-icon"><img src="images/lock.webp" alt="Lock" /></div>
+            </div>
+        </div>
+    </div>
+    <!-- ================= HEADER ================= -->
+    <header class="sticky-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+
+                <!-- Logo Left -->
+                <a class="navbar-brand" href="#">
+
+                    <img src="images/logo.png" alt="Logo" style="height:50px;">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Right -->
+                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><span>Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="solutionsDropdown">
+                                Solutions
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="solutionsDropdown">
+                                <li><a class="dropdown-item" href="software-composition-analysis.html">Software
+                                        Composition Analysis</a></li>
+                                <li><a class="dropdown-item active" href="penetration-test.html">Penetration Test
+                                    </a></li>
+                                <li><a class="dropdown-item" href="cdn-service.html">CDN Service
+                                    </a></li>
+                                <li><a class="dropdown-item" href="cloud-service.html">Cloud Service
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Partners / Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= CONTENT ================= -->
+
+
+    <section class="hero-banner-products d-flex">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <!-- Text on the right -->
+                <div class="col-md-6">
+                    <h1 class="fw-bold section-title" id="typing-text">Penetration Test
+                    </h1>
+                    <p data-aos="fade-up" class="lead text-black">Autonomous fuzzing built for modern, complex and
+                        high-risk systems.</p>
+
+                </div>
+                <div class="col-md-6">
+                    <img src="images/Asset 10@2x-8.png" data-aos="fade-left" class="img-fluid section-image"
+                        alt="Section Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-two bg-white py-5" style="width: 100%;position: relative;overflow: hidden;">
+        <div class="particles-wrapper">
+            <div id="particles-js"></div>
+        </div>
+
+        <div class="section-inner container text-center mt-5">
+            <div class="row g-4">
+                <div data-aos="fade-up" data-aos-delay="0" class="col-md-4 col-12 text-center">
+                    <img src="images/icons/Asset 61@2x-8.png" class="mb-2 products-image" style="height:auto;width:35%;"
+                        alt="Detect Critical Security Threats">
+                    <h4 class="fw-bold solutions-font ">Detect Critical Security
+                        Threats</h4>
+                    <p>Identify critical security issues, including stack-based and heap-based buffer overflows.
+                        out-of-bounds read or write errors,and more. Safeguard your applications with precision.</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="0" class="col-md-4 col-12 text-center">
+                    <img src="images/icons/Asset 65@4x-8.png" class="mb-2 products-image" style="height:auto;width:35%;"
+                        alt="Real-time Vulnerability Detection">
+                    <h4 class="fw-bold solutions-font">Black Box Analysis</h4>
+                    <p>Perform black box analysis without the need for source code access.Our automated analysis targets
+                        binaries directly, allowing for a comprehensive security assessment.</p>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="0" class="col-md-4 col-12 text-center">
+                    <img src="images/icons/Asset 66@4x-8.png" class="mb-2 products-image" style="height:auto;width:35%;"
+                        alt="Ensure Legal Compliance">
+                    <h4 class="fw-bold solutions-font">Efficient Vulnerability
+                        Verification</h4>
+                    <p>Generate sample inputs that trigger vulnerabilities within your applications. This valuable
+                        resource aids in vulnerability verification and remediation efforts, ensuring your software
+                        remains resilient.</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="section-inner container py-5">
+            <!-- Section Title -->
+            <h2 data-aos="fade-right" class="text-center section-title fw-bold mb-5">Service Process</h2>
+            <div class="row g-4">
+                <div data-aos="fade-right" data-aos-delay="0" class="col-md-3 col-6 text-center">
+                    <img src="images/icons/Asset 42@2x-8.png" class="mb-2 products-image" style="height:auto;width:35%;"
+                        alt="Test Scope Determination">
+                    <h4 class="fw-bold solutions-font">Test Scope Determination</h4>
+                    <p>Analyze the test scope and develop a plan for simulated attacks based on the
+                        scope.</p>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="0" class="col-md-3 col-6 text-center">
+                    <img src="images/icons/Asset 43@2x-8.png" class="mb-2 products-image" style="height:auto;width:35%;"
+                        alt="Planning">
+                    <h4 class="fw-bold solutions-font">Planning</h4>
+                    <p>Select a test level based on the risk status of your applications. This meets the security
+                        requirements of different scenarios.</p>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="0" class="col-md-3 col-6 text-center">
+                    <img src="images/icons/Asset 44@2x-8.png" class="mb-2 products-image" style="height:auto;width:35%;"
+                        alt="Implementation">
+                    <h4 class="fw-bold solutions-font">Implementation</h4>
+                    <p>lmplement penetration testing on business systems, web applications, networks, and operating
+                        systems that are exposed to the
+                        Internet.</p>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="0" class="col-md-3 col-6 text-center">
+                    <img src="images/icons/Asset 45@2x-8.png" class="mb-2 products-image" style="height:auto;width:35%;"
+                        alt="Delivery">
+                    <h4 class="fw-bold solutions-font">Delivery</h4>
+                    <p>Provide penetration test reports that cover the test process, risk status, vulnerability details,
+                        and fix suggestions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-inner container py-5">
+            <!-- Section Title -->
+            <h2 data-aos="fade-right" class="text-center section-title fw-bold mb-5">Benefits</h2>
+            <div class="row g-4">
+                <div data-aos="fade-right" data-aos-delay="0" class="col-md-6 col-12 row py-3">
+                    <div class="col-3">
+                        <img src="images/icons/Asset 46@2x-8.png" class="mb-2 img-fluid"
+                            alt="A Team of Talented Security Experts">
+                    </div>
+                    <div class="col-9">
+                        <h4 class="fw-bold">A Team of Talented Security Experts</h4>
+                        <p>All project team members are certified security professionals. Our consultants hold some of
+                            the most respected international certifications from the IT Security Penetration Testing,
+                            Security Assessment, Computer Crime Forensic Investigation, and ISO/IEC 27001:2013 fields.
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="0" class="col-md-6 col-12 row py-3">
+                    <div class="col-3">
+                        <img src="images/icons/Asset 47@2x-8.png" class="mb-2 img-fluid" alt="Proven Track Records">
+                    </div>
+                    <div class="col-9">
+                        <h4 class="fw-bold">Proven Track Records</h4>
+                        <p>All project team members are certified security professionals. Our consultants hold some of
+                            the most respected international certifications from the IT Security Penetration Testing,
+                            Security Assessment, Computer Crime Forensic Investigation, and ISO/IEC 27001:2013 fields.
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="0" class="col-md-6 col-12 row py-3">
+                    <div class="col-3">
+                        <img src="images/icons/Asset 48@2x-8.png" class="mb-2 img-fluid" alt="Comprehensive Test Plans">
+                    </div>
+                    <div class="col-9">
+                        <h4 class="fw-bold">Comprehensive Test Plans</h4>
+                        <p>This service provides professional penetration test cases that are developed based on the
+                            best practices in the industry and relevant international standards. This ensures that the
+                            penetration test process is comprehensive and effective. The test scope includes the
+                            simulation of attacks on systems, web applications, mobile apps, network devices, Internet
+                            of Things (IoT) devices, and smart devices.
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="0" class="col-md-6 col-12 row py-3">
+                    <div class="col-3">
+                        <img src="images/icons/Asset 49@2x-8.png" class="mb-2 img-fluid"
+                            alt="End-to-End Security Solution">
+                    </div>
+                    <div class="col-9">
+                        <h4 class="fw-bold ">End-to-End Security Solution</h4>
+                        <p>This service identifies vulnerabilities and potential risks to provide security advice. You
+                            can leverage a variety of security solutions and Alibaba Cloud technologies to safeguard
+                            your business.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-three py-5">
+        <div class="section-inner container">
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div data-aos="fade-right" class="info-card align-items-center py-3"
+                        style="box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.2);">
+                        <h2 class="fw-bold">Increased Awareness</h2>
+                        <div class="row py-2">
+                            <div class="col-1">
+                                <img src="images/icons/Asset 50@2x-8.png" style="height: 20px;width: 20px;" alt="Check">
+                            </div>
+                            <div class="col-11">
+                                Uncover hidden system vulnerabilities before attackers do
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-1">
+                                <img src="images/icons/Asset 50@2x-8.png" style="height: 20px;width: 20px;" alt="Check">
+                            </div>
+                            <div class="col-11">
+                                Strengthen security processes and strategies with better visibility
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div data-aos="fade-right" class="info-card align-items-center py-3"
+                        style="box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.2);">
+                        <h2 class="fw-bold">Continually Improve</h2>
+                        <div class="row py-2">
+                            <div class="col-1">
+                                <img src="images/icons/Asset 50@2x-8.png" style="height: 20px;width: 20px;" alt="Check">
+                            </div>
+                            <div class="col-11">
+                                Better understand how your digital systems work together and implement positive changes
+                                to your IT infrastructure
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-1">
+                                <img src="images/icons/Asset 50@2x-8.png" style="height: 20px;width: 20px;" alt="Check">
+                            </div>
+                            <div class="col-11">
+                                Identify and mitigate vulnerabilities throughout your internal and external IT
+                                environments
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-two bg-white" style="width: 100%;position: relative;overflow: hidden;">
+        <div class="particles-wrapper">
+            <div id="particles-js-2"></div>
+        </div>
+        <div class="section-inner container d-none d-md-block">
+            <div class="row g-4 py-3 align-items-center">
+                <div data-aos="fade-right" data-aos-delay="0" class="col-md-9 col-12">
+                    <h4 class="fw-bold mb-3">Precise Binary-Level Analysis</h4>
+                    <ul>
+                        <li>Scantist's proprietary dynamic instrumentation technology allows you to scan applications at
+                            the binary level, uncovering vunerabilities at both the development and compilation stages.
+                        </li>
+                        <li>Our intelligent hooking mechanism eliminates the need for manual efforts, achieving quicker
+                            vulnerability detection and resolution through near-native speed processing and targeted
+                            fuzzing strategies.
+                        </li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="0" class="col-md-3 col-12 text-center">
+                    <img src="images/Asset 54@2x-8.png" class="mb-2 img-fluid" alt="Precise Binary-Level Analysis">
+
+                </div>
+            </div>
+
+            <div class="row g-4 py-3 align-items-center">
+                <div data-aos="fade-right" data-aos-delay="0" class="col-md-3 col-12 text-center">
+                    <img src="images/Asset 55@2x-8.png" class="mb-2 img-fluid" alt="Intelligent Static Pre-Analysis">
+                </div>
+                <div data-aos="fade-left" data-aos-delay="0" class="col-md-9 col-12">
+                    <h4 class="fw-bold mb-3">Intelligent Static Pre-Analysis</h4>
+                    <ul>
+                        <li>We blend existing vulnerability signatures and metrics for prioritized vulnerability
+                            discovery.
+                        </li>
+                        <li>Our Fuzzing Test analyzer continuously adapts to your application's use-cases, ensuring
+                            extensive and thorough testing at every stage.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row g-4 py-3 align-items-center">
+                <div data-aos="fade-right" data-aos-delay="0" class="col-md-9 col-12">
+                    <h4 class="fw-bold mb-3">Cross-Platform, Cross-Architecture Support</h4>
+                    <ul>
+                        <li>Unmatched multi-platform and architecture support, including Windows/Linux and Intel
+                            (x86k64)/ARM/MIPS/PowerPc, all without emulation for faster processing.
+                        </li>
+                        <li>Maximize vulnerability coverage by analyzing every critical part of your application with
+                            Scantist's proprietary seed prioritization.
+                        </li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="0" class="col-md-3 col-12 text-center">
+                    <img src="images/Asset 56@2x-8.png" class="mb-2 img-fluid"
+                        alt="Cross-Platform, Cross-Architecture Support">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section-inner container d-md-none">
+            <div data-aos="fade-right" class="row g-4 py-3 align-items-center">
+                <div data-aos-delay="0" class="col-md-3 col-12 text-center">
+                    <img src="images/Asset 54@2x-8.png" class="mb-2 img-fluid"
+                        alt="Visibility & Clarity on Software Components">
+
+                </div>
+
+                <div data-aos="fade-left" data-aos-delay="0" class="col-md-9 col-12">
+                    <h4 class="fw-bold mb-3">Precise Binary-Level Analysis</h4>
+                    <ul>
+                        <li>Scantist's proprietary dynamic instrumentation technology allows you to scan applications at
+                            the binary level, uncovering vunerabilities at both the development and compilation stages.
+                        </li>
+                        <li>Our intelligent hooking mechanism eliminates the need for manual efforts, achieving quicker
+                            vulnerability detection and resolution through near-native speed processing and targeted
+                            fuzzing strategies.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row g-4 py-3 align-items-center">
+                <div data-aos="fade-right" data-aos-delay="0" class="col-md-3 col-12 text-center">
+                    <img src="images/Asset 55@2x-8.png" class="mb-2 img-fluid"
+                        alt="Proprietary Vulnerabilities & Security Database">
+
+                </div>
+                <div data-aos="fade-left" data-aos-delay="0" class="col-md-9 col-12">
+                    <h4 class="fw-bold mb-3">Intelligent Static Pre-Analysis</h4>
+                    <ul>
+                        <li>We blend existing vulnerability signatures and metrics for prioritized vulnerability
+                            discovery.
+                        </li>
+                        <li>Our Fuzzing Test analyzer continuously adapts to your application's use-cases, ensuring
+                            extensive and thorough testing at every stage.
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="row g-4 py-3 align-items-center">
+                <div data-aos="fade-right" data-aos-delay="0" class="col-md-3 col-12 text-center">
+                    <img src="images/Asset 56@2x-8.png" class="mb-2 img-fluid"
+                        alt="Customization for Security and Control">
+
+                </div>
+
+                <div data-aos="fade-left" data-aos-delay="0" class="col-md-9 col-12">
+                    <h4 class="fw-bold mb-3">Cross-Platform, Cross-Architecture Support</h4>
+                    <ul>
+                        <li>Unmatched multi-platform and architecture support, including Windows/Linux and Intel
+                            (x86k64)/ARM/MIPS/PowerPc, all without emulation for faster processing.
+                        </li>
+                        <li>Maximize vulnerability coverage by analyzing every critical part of your application with
+                            Scantist's proprietary seed prioritization.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer text-white" style="background: rgba(51, 51, 51, 1);">
+        <div class="container py-5">
+            <div class="row">
+
+                <!-- Column 1 -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="fw-bold">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Partners / Clients</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="fw-bold">Products</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="footer-link">AlphaSentinels</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="fw-bold">Solutions</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Software Composition Analysis</a></li>
+                        <li><a href="#" class="footer-link">Penetration Test</a></li>
+                        <li><a href="#" class="footer-link">CDN Service</a></li>
+                        <li><a href="#" class="footer-link">Cloud Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="fw-bold">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">(65) 6467 2249</a></li>
+                        <li><a href="#" class="footer-link">innfo@alphawall.biz</a></li>
+                        <li><a href="#" class="footer-link">18 Sinn Ming Lane, #02-16</a></li>
+                        <li><a href="#" class="footer-link">Midview City, Singapore 573960</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Divider and Copyright -->
+        <div class="footer-bottom text-center py-3" style="border-top: 1px solid rgba(255,255,255,0.2);">
+            © 2025 AlphaWall. All rights reserved.
+        </div>
+    </footer>
+
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            preloader.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+        AOS.init();
+
+        const el = document.getElementById("typing-text");
+        const text = el.innerHTML; // use the existing content
+        el.innerHTML = "";          // clear it first
+
+        let i = 0;
+        const speed = 50; // typing speed in ms
+
+        function typeWriter() {
+            if (i < text.length) {
+                el.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        typeWriter();
+
+        particlesJS("particles-js", {
+            particles: {
+                color: { value: "#b5c8f5" },
+                line_linked: {
+                    color: "#b5c8f5",
+                    distance: 200,
+                    enable: true,
+                    opacity: 0.6,
+                    width: 2
+                },
+                move: {
+                    enable: true,
+                    speed: 3,
+                    outModes: { default: "bounce" },
+                },
+                number: { density: { enable: true, area: 300 }, value: 25 },
+                opacity: { value: 0.5, random: false, anim: { enable: false } },
+                shape: { type: "circle" },
+                size: { value: 5, random: false },
+            },
+            interactivity: {
+                detectsOn: "window",
+                events: {
+                    onClick: { enable: false, mode: "push" },
+                    onHover: {
+                        enable: true,
+                        mode: "repulse",
+                        parallax: { enable: false, force: 2, smooth: 10 },
+                    },
+                    resize: true,
+                },
+                modes: {
+                    repulse: { distance: 100, duration: 0.4 },
+                },
+            },
+            retina_detect: true,
+        });
+
+        particlesJS("particles-js-2", {
+            particles: {
+                color: { value: "#b5c8f5" },
+                line_linked: {
+                    color: "#b5c8f5",
+                    distance: 200,
+                    enable: true,
+                    opacity: 0.6,
+                    width: 2
+                },
+                move: {
+                    enable: true,
+                    speed: 3,
+                    outModes: { default: "bounce" },
+                },
+                number: { density: { enable: true, area: 300 }, value: 25 },
+                opacity: { value: 0.5, random: false, anim: { enable: false } },
+                shape: { type: "circle" },
+                size: { value: 5, random: false },
+            },
+            interactivity: {
+                detectsOn: "window",
+                events: {
+                    onClick: { enable: false, mode: "push" },
+                    onHover: {
+                        enable: true,
+                        mode: "repulse",
+                        parallax: { enable: false, force: 2, smooth: 10 },
+                    },
+                    resize: true,
+                },
+                modes: {
+                    repulse: { distance: 100, duration: 0.4 },
+                },
+            },
+            retina_detect: true,
+        });
+
+    </script>
+</body>
+
+</html>
