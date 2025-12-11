@@ -608,7 +608,7 @@ html, body {
     /* Initial placeholder background to avoid grey flash */
     background-color: #d0d0d0;
     /* light grey or a color that matches the image */
-    background-image: url("../images/products-background.png");
+    background-image: url("../images/product-background.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
