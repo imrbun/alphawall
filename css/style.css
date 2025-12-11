@@ -819,3 +819,163 @@ html, body {
     height: 100%;
     object-fit: cover;
 }
+
+.custom-card {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+
+    /* Stronger side + bottom shadow */
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.12),
+        /* bottom */
+        6px 0 18px rgba(0, 0, 0, 0.08),
+        /* right */
+        -6px 0 18px rgba(0, 0, 0, 0.08);
+    /* left */
+}
+
+/* Animated top border with radius */
+.custom-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #007bff;
+
+    /* Match the card’s top radius */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    /* Animation */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+.custom-card:hover::before,
+.custom-card.aos-animate::before {
+    transform: scaleX(1);
+}
+
+.circle-num {
+    width: 40px;
+    height: 40px;
+    background: rgba(46, 63, 85, 1);
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.partner-row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.partner-img {
+    height: 250px;
+    object-fit: contain;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .partner-row>.info-card {
+        width: 90%;
+        margin: 0 auto 1rem;
+    }
+
+    .partner-img {
+        height: 150px;
+        width: 100%;
+    }
+
+    .partner-text {
+        margin-top: 0px;
+        margin-bottom: 5rem;
+    }
+}
+
+.hero-banner-products .contact-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    /* adjust size as needed */
+    height: 250px;
+}
+
+.circle-icon {
+    width: 50px;
+    /* adjust size */
+    height: 50px;
+    background-color: rgba(220, 236, 255, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    /* prevents shrinking */
+}
+
+.circle-icon img {
+    width: 35px;
+    /* icon size */
+    height: 35px;
+    object-fit: contain;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    /* optional rounded corners */
+    box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.2);
+    /* optional shadow */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .feature-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0.75rem;
+        /* space between icon and text */
+    }
+
+    .feature-row .icon-col {
+        flex: 0 0 auto;
+        /* keep icon size fixed */
+    }
+
+    .feature-row .col-11 {
+        flex: 1;
+        /* take remaining space */
+    }
+}
+
+.btn-auto {
+    display: inline-block !important;
+    width: auto !important;
+    margin: 0 auto;
+}
