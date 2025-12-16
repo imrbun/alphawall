@@ -314,7 +314,7 @@ html, body {
     height: 400px;
     object-fit: contain;
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto;
 }
 
 /* Mobile: smaller images */
@@ -601,7 +601,7 @@ html, body {
 }
 
 .hero-banner-products {
-    height: auto;
+    height: 350px;
     position: relative;
     color: #fff;
 
@@ -610,10 +610,15 @@ html, body {
     /* light grey or a color that matches the image */
     background-image: url("../images/product-background.png");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
 
-    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    /* vertical center content */
+    overflow: hidden;
+
     /* Fade in effect */
     opacity: 0;
     animation: fadeInBg 1s ease forwards;
@@ -630,9 +635,21 @@ html, body {
     }
 }
 
+.hero-banner-products .container,
+.hero-banner-products .row {
+    height: 100%;
+}
+
+.hero-banner-products img {
+    max-height: 275px;
+    width: auto;
+    object-fit: contain;
+}
+
 /* Mobile: shift background to the right */
 @media (max-width: 768px) {
     .hero-banner-products {
+        height: auto;
         background-position: 60% center;
         background-attachment: scroll;
 
@@ -978,4 +995,10 @@ html, body {
     display: inline-block !important;
     width: auto !important;
     margin: 0 auto;
+}
+
+.lead {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 1.15rem;
 }
