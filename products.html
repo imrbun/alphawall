@@ -123,9 +123,7 @@
     </section>
 
     <section class="section-two py-5" style="width: 100%;position: relative;overflow: hidden;">
-        <div class="particles-wrapper">
-            <div id="particles-js"></div>
-        </div>
+
         <div class="container position-relative d-none d-lg-block">
 
             <div class="row text-center justify-content-center">
@@ -466,43 +464,7 @@
 
         typeWriter();
 
-        particlesJS("particles-js", {
-            particles: {
-                color: { value: "#b5c8f5" },
-                line_linked: {
-                    color: "#b5c8f5",
-                    distance: 200,
-                    enable: true,
-                    opacity: 0.6,
-                    width: 2
-                },
-                move: {
-                    enable: true,
-                    speed: 3,
-                    outModes: { default: "bounce" },
-                },
-                number: { density: { enable: true, area: 300 }, value: 25 },
-                opacity: { value: 0.5, random: false, anim: { enable: false } },
-                shape: { type: "circle" },
-                size: { value: 5, random: false },
-            },
-            interactivity: {
-                detectsOn: "window",
-                events: {
-                    onClick: { enable: false, mode: "push" },
-                    onHover: {
-                        enable: true,
-                        mode: "repulse",
-                        parallax: { enable: false, force: 2, smooth: 10 },
-                    },
-                    resize: true,
-                },
-                modes: {
-                    repulse: { distance: 100, duration: 0.4 },
-                },
-            },
-            retina_detect: true,
-        });
+
 
     </script>
 </body>
