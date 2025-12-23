@@ -154,9 +154,7 @@
 
     <!-- ================= THIRD SECTION ================= -->
     <section class="section-three py-5">
-        <div class="particles-wrapper">
-            <div id="particles-js-2"></div>
-        </div>
+
         <div class="section-inner container">
             <div class="row g-4">
 
@@ -658,43 +656,7 @@
             retina_detect: true,
         });
 
-        particlesJS("particles-js-2", {
-            particles: {
-                color: { value: "#b5c8f5" },
-                line_linked: {
-                    color: "#b5c8f5",
-                    distance: 200,
-                    enable: true,
-                    opacity: 0.6,
-                    width: 2
-                },
-                move: {
-                    enable: true,
-                    speed: 3,
-                    outModes: { default: "bounce" },
-                },
-                number: { density: { enable: true, area: 300 }, value: 70 },
-                opacity: { value: 0.5, random: false, anim: { enable: false } },
-                shape: { type: "circle" },
-                size: { value: 5, random: false },
-            },
-            interactivity: {
-                detectsOn: "window",
-                events: {
-                    onClick: { enable: false, mode: "push" },
-                    onHover: {
-                        enable: true,
-                        mode: "repulse",
-                        parallax: { enable: false, force: 2, smooth: 10 },
-                    },
-                    resize: true,
-                },
-                modes: {
-                    repulse: { distance: 100, duration: 0.4 },
-                },
-            },
-            retina_detect: true,
-        });
+
     </script>
 </body>
 
